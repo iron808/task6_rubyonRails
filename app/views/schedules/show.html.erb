@@ -1,0 +1,31 @@
+<%= render "shared/top" %>
+
+<div class="select_link">
+  <%= link_to "一覧に戻る", schedules_index_path %><br>
+  <%= link_to "編集", [:edit, @schedules] %>
+</div>
+
+  <div class="view_title">
+    <%= @schedules.title %>
+  </div>
+
+<div class="view_user_data">
+<table>
+  <tr>
+    <th>開始日</th>
+    <td><%= @schedules.start %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @schedules.finish %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><%= @schedules.eod == "1" ? "⚪︎" : "" %></td>
+  </tr>
+  <tr>
+    <th>スケジュールメモ</th>
+    <td class="show_user_memo"><%= @schedules.memo %></td>
+  </tr>
+</table>
+</div>

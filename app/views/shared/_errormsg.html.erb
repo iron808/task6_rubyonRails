@@ -1,0 +1,9 @@
+<% if @schedules.errors.any? %>
+  <div class="error-messages">
+    <ul>
+      <% @schedules.errors.full_messages.each do |message| %>
+        <li class="show_errormsg"><%= "※#{message}" %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -1,0 +1,77 @@
+
+.top{
+  background-color: #1c1d3b;
+  margin-top: 0;
+  p{
+    color: white;
+    text-align: center;
+  }
+}
+
+.show_errormsg{
+    list-style: none;
+    color: red;
+}
+
+body{
+  background-color: #f6f6f6;
+  font-family: 'Yu Gothic','Yu Gothic Medium','メイリオ','MS ゴシック','游ゴシック Medium',sans-serif;
+  margin: 20px;
+}
+
+/*index*/
+.menu{
+  display: flex;
+  justify-content: space-between;
+  .add_users_container{
+    align-items: center;
+  }
+  .add_users_data{
+    display: block;
+    background-color: #2962ff;;
+    width: 100px;
+    text-align: center;
+  }
+  .linkto_newadd{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.view_schedules_table{
+  width: 100%;
+  background-color: white;
+  tr{
+    text-align: left;
+  }
+}
+
+.view_total_schedules{
+   background-color: white;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*new*/
+.add_form_container{
+  background-color: white;
+  .attention_icons{
+    color: red;  
+  }
+}
+
+.input_users_date{
+  display: flex;
+  gap: 50px;
+}
+
+/*show*/
+.select_link{
+  display: flex;
+  gap: 10px;
+}
+
+.view_user_data{
+  background-color: white;
+}
